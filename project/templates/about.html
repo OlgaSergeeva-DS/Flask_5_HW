@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Обо мне</h1>
+    
+    <!-- Твоя картинка -->
+    <img src="{{ url_for('static', filename='img/image.jpg') }}" alt="Мое фото" class="profile-img">
+
+    <h2>Мои навыки и достижения:</h2>
+    <ul class="achievements-list">
+        <li>Успешно освоила синтаксис языка программирования Python и изучила продвинутый Python</li>
+        <li>Умею работать с Git и GitHub</li>
+        <li>Успешно освоила модули: Linux: основы процессов и потоков, алгоритмы и структуры данных, базы данных</li>
+        <li>Изучаю фреймворк Flask и веб-верстку</li>
+        <li>Следующее, что буду изучать: фреймворк Django</li>
+    </ul>
+{% endblock %}

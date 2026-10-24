@@ -1,0 +1,22 @@
+# 1. Виртуальное окружение (Python)
+.venv/
+venv/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# 2. Настройки редактора VS Code / PyCharm
+.idea/
+.vscode/
+
+# 3. Базы данных (SQLite)
+*.db
+*.sqlite3
+instance/
+var/
+
+# 4. Кэш Python (создается автоматически)
+__pycache__/
+*.py[cod]
+*$py.class

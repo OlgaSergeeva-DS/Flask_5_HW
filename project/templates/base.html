@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }} | Мой Блог</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Меню -->
+        <nav class="main-nav">
+            {% for item in menu %}
+                <a href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+        </nav>
+
+        <!-- Сюда вставляются страницы -->
+        {% block content %}{% endblock %}
+
+        <footer>
+            <p>© 2026 Мой путь в Python-разработку</p>
+        </footer>
+    </div>
+</body>
+</html>

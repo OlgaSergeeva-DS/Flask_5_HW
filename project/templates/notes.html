@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Дневник программиста</h1>
+
+    <!-- Форма -->
+    <form method="POST" class="note-form">
+        <div class="form-group">
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" required placeholder="Например: День 1">
+        </div>
+        <div class="form-group">
+            <label for="text">Текст записи:</label>
+            <textarea id="text" name="text" required rows="4" placeholder="Что нового узнали?"></textarea>
+        </div>
+        <button type="submit">Добавить запись</button>
+    </form>
+
+    <hr>
+
+    <h2>Мои записи:</h2>
+    {% if notes %}
+        <ul class="notes-list">
+            {% for note in notes %}
+                <li>
+                    <strong>{{ note.title }}</strong>
+                    <p>{{ note.text }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="empty-msg">Записей пока нет. Добавьте первую!</p>
+    {% endif %}
+
+    <hr>
+
+    <h2>Темы изученного материала:</h2>
+    <div class="table-responsive">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Тема</th>
+            </tr>
+            {% for theme in themes %}
+            <tr>
+                <td>{{ theme.id }}</td>
+                <td>{{ theme.name }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

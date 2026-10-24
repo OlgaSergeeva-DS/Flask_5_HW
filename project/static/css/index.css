@@ -1,0 +1,190 @@
+/* --- Базовые стили (твои из 2 задания) --- */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #1a365d;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2b6cb0;
+    margin-top: 30px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+p.subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #4a5568;
+}
+
+/* --- Картинка --- */
+.profile-img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Навигация (Меню) --- */
+.main-nav {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #2b6cb0;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #1a365d;
+    text-decoration: underline;
+}
+
+/* --- Таблицы --- */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2b6cb0;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+/* --- Формы (Дневник) --- */
+.note-form {
+    background-color: #f7fafc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 2px rgba(43, 108, 176, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a365d;
+}
+
+/* --- Список записей --- */
+.notes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notes-list li {
+    background: #edf2f7;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 4px solid #2b6cb0;
+    border-radius: 4px;
+}
+
+.notes-list li strong {
+    color: #2b6cb0;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.notes-list li p {
+    margin: 0;
+    color: #4a5568;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #718096;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #a0aec0;
+    font-size: 14px;
+}
